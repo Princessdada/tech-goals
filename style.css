@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    text-align: center;
+}
+header{
+    margin-top: 20px;
+    background-color:#fff;
+    color: #000;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img{
+    width: 10%;
+    padding: 20px;
+    border-radius: 40%;
+}
+.introduction{
+    display: flex;
+    align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.profile-img{
+    flex: 0 1 auto;
+    width: 10%;
+    padding-right: 30px;
+    
+    
+}
+.profile-img img{
+    width: 100%;
+}
+.introduction-details{
+ flex: 1;
+ padding-left: 50px;
+}
+
+.goals-container{
+    display: inline;
+    align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+.goals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+   
+    padding: 50px;
+   
+}
+
+.goals ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    padding-left: 20px;
+    margin: 0;
+}
+
+.goals li{
+    text-align: center;
+    width:  50%
+    
+}
+.my-info{
+    display: flex;
+    align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.my-info-data{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px; 
+    
+    margin: 0;
+}
+
+.website-link{
+    display: flex;
+    flex-direction:column;
+    line-height: 1.5;
+    padding-left: 50px;
+  width: 100%;
+
+  box-sizing: border-box; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .introduction, .my-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .goals ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        line-height: 2;
+    }
+    .profile-img {
+        width: 50%;
+        padding-right: 0;
+    }
+    .profile-img img {
+        width: 100%;
+    }
+    .introduction-details, .my-info-data {
+        padding-left: 0;
+    }
+    
+}
